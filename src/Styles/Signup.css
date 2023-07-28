@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
 .lg-form-h3 {
     text-align: center;
     margin-bottom: 1em;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .lg-label,
@@ -93,6 +93,91 @@ h1, h2, h3, h4 {
     outline: none;
 }
 
+.lg-back-to-login{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: green;
+}
+.lg-back-to-login:hover{
+    color: #02026C;
+}
+/* Signup.css */
+
+.lg-back-to-login {
+  display: block;
+  text-align: center;
+  color: #2c2929; /* Text color for the link */
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1rem; /* Add spacing between the "Signup" button and the link */
+}
+
+.lg-back-to-login:hover {
+  color: #000; /* Text color on hover */
+}
+
+.lg-back-to-login:focus {
+  outline: none;
+}
+
+/* .lg-redirect-tab{
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+    
+}
+.lg-redirect-tab-signup{
+    background-color: green;
+    width: 50%;
+    text-align: center;
+}
+.lg-redirect-tab-signin{
+    background-color: rgb(5, 8, 71);
+    width: 50%;
+    text-align: center;
+} */
+
+.lg-redirect-tab {
+    margin: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    text-align: center;
+    width: 100%; /* Set the width to 100% to fill the entire available space */
+}
+
+.lg-redirect-tab-signup {
+    background-color: green;
+    flex-grow: 1; /* Allow the element to grow and take up the available space */
+    text-align: center;
+}
+
+.lg-redirect-tab-signin {
+    background-color: rgb(5, 8, 71);
+    flex-grow: 1; /* Allow the element to grow and take up the available space */
+    text-align: center;
+}
+
+.redict-link {
+    display: block;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+  
+  /* Focus style */
+  .lg-form-h3 a:focus {
+    outline: none;
+  }
+/* Additional styles for the link, as needed */
+
 /* Media queries for responsiveness */
 
 /* For screens larger than or equal to 768px */
@@ -103,6 +188,19 @@ h1, h2, h3, h4 {
     }
 }
 
+@media (max-width: 540px) {
+    .lg-form-header{
+        background-color: rgb(2, 2, 108);
+        height: 3rem;
+        position: relative;
+        width: 100%;
+    }
+    .lg-form-h3 {
+        text-align: center;
+        /* margin-bottom: 1em; */
+        margin-top: 1rem;
+    }
+}
 
 @media (max-width: 400px) {
     .lg-form-container {
@@ -118,6 +216,7 @@ h1, h2, h3, h4 {
     }
 
     .lg-input
+    
     {
         width: max-content;
         background-color: #FFF;
@@ -130,6 +229,13 @@ h1, h2, h3, h4 {
         text-align: center;
         /* margin-bottom: 1em; */
         margin-top: 1rem;
+    }
+    .lg-form-header{
+        display: none;
+    }
+    .lg-redirect-tab{
+        align-self: center;
+        width: 86%;
     }
 
 }
