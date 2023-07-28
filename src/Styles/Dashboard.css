@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.dashboard {
+  background-color: #f2f2f2;
+}
+
+.db-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.db-sidebar {
+  margin: 0.5rem 1rem 1rem 1rem;
+  padding: 1rem;
+  border-radius: 0px 32px 32px 0px;
+  background-color: #020266;
+  width: 12%;
+  height: 100vh;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.db-primary-section {
+  width: 87%;
+  margin: 0.5rem 1rem 1rem 1rem;
+  padding: 1rem;
+  border-radius: 0px 32px 32px 0px;
+  height: 100vh;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+.db-primary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.db-primary-section-header {
+  border-radius: 0px 32px 0px 0px;
+  height: 4rem;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+.db-primary-section-main {
+  border-radius: 0px 0px 32px 0px;
+  height: 88vh;
+  background-color: #fff;
+  
+}
+
+/* Styles for the sidebar logo and navigation links */
+.db-slidebar-logo,
+.db-slidebar-ul ul,
+.db-slidebar-ul ul li,
+.db-slidebar-ul ul li button {
+  background-color: #020266;
+}
+
+.db-slidebar-ul ul li {
+  padding: 1rem 0px;
+  list-style: none;
+  
+}
+
+.db-slidebar-ul a {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    margin-left: -1rem;
+  }
+  
+  /* Hover effect for the sidebar buttons */
+  .db-slidebar-ul a:hover {
+    background-color: #007bff;
+    border-radius: 0 16px  16px 0;
+  }
+  .db-primary-section-main-table{
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .db-primary-section-main-table table{
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+tr{
+    
+}
+/* Optional styles for table header */
+th {
+    
+    text-align: left;
+    padding: 8px;
+}
+
+/* Optional styles for table cells */
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Optional styles for alternating rows */

@@ -1,11 +1,11 @@
 
 import './App.css'
-import Signup from './Components/Signup'
+import Dashboard from './Components/Dashboard'
 
 function App() {
   return (
     <>
-    <Signup/>
+    <Dashboard/>
     </>
   )
 }
