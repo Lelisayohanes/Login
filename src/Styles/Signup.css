@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.lg-form-container {
+    margin: 0;
+    padding: 0;
+    color: #252424;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.lg-form-header {
+    background-color: rgb(2, 2, 108);
+    height: 5rem;
+    position: relative;
+    width: 100%;
+}
+
+.lg-form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lg-form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.lg-form-content {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em 2em;
+    max-width: 1000px;
+    /* min-width: 400px; */
+    width: 80%;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);/* Add box shadow */
+}
+
+.lg-form-h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 3rem;
+}
+
+.lg-label,
+.lg-input {
+    margin: 0.5rem 1rem;
+}
+
+.lg-label {
+    
+    color: #2c2929;
+    font-size: 1rem;
+}
+
+.lg-input {
+    
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.lg-form-btn {
+    margin: 1rem 1rem 3rem;
+    padding: 0.75rem 1.5rem ;
+    font-size: 1rem;
+    color: #FFF;
+    background-color: rgb(2, 2, 108);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.lg-form-btn:hover {
+    background-color: rgb(0, 0, 128);
+}
+
+.lg-form-btn:focus {
+    outline: none;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens larger than or equal to 768px */
+@media (min-width: 768px ) {
+    .lg-form-content {
+        min-width: 500px;
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .lg-form-container {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+    .lg-form-content {
+        margin:0;
+        padding: 0;
+        max-width: 400px;
+        width: 100%;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);/* Add box shadow */
+    }
+
+    .lg-input
+    {
+        width: max-content;
+        background-color: #FFF;
+    }
+    .lg-form-btn{
+        align-self: center;
+        width: 86%;
+    }
+    .lg-form-h3 {
+        text-align: center;
+        /* margin-bottom: 1em; */
+        margin-top: 1rem;
+    }
+
+}
